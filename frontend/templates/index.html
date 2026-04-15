@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Lung Cancer AI</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+
+<div class="container">
+
+    <!-- 🧠 HEADER -->
+    <h1 class="title">AI Lung Cancer Diagnostic System</h1>
+    <p class="subtitle">Deep Learning based CT Scan Analysis</p>
+
+    <!-- 📤 UPLOAD CARD -->
+    <div class="card">
+        <input type="file" id="fileInput">
+        <button onclick="uploadImage()">Analyze Scan</button>
+    </div>
+
+    <!-- 🔄 LOADER -->
+    <div id="loader" class="hidden loader">
+        <p>🧠 AI is analyzing the scan...</p>
+    </div>
+
+    <!-- 📊 RESULT -->
+    <div id="result" class="card hidden"></div>
+
+    <!-- 🖼️ IMAGES -->
+    <div class="image-section">
+        <img id="uploadedImg" class="hidden" />
+        <img id="heatmap" class="hidden" />
+    </div>
+
+</div>
+
+<script src="/static/script.js"></script>
+</body>
+</html>
